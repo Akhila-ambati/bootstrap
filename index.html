@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url(https://img.freepik.com/free-vector/realistic-neon-lights-background_23-2148907367.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+           
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning border 3px  border-danger">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="text-success">Welcome to My Portfolio</h1>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-warning">About Me</h2>
+        <p class="text-info">Iam working on HTML & CSS Project </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mt-5">
+        <h2 class="text-danger">My Work</h2>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXZv0VBfQe5tVq6frR-_CLMHTnDzaRiwoBQ&s" class="img-fluid" alt="Project 1">
+                <h3 class="text-primary">Project 1</h3>
+                <p class="text-success">Description of project 1.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXZv0VBfQe5tVq6frR-_CLMHTnDzaRiwoBQ&s" class="img-fluid" alt="Project 2">
+                <h3 class="text-primary">Project 2</h3>
+                <p class="text-success">Description of project 2.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXZv0VBfQe5tVq6frR-_CLMHTnDzaRiwoBQ&s" class="img-fluid" alt="Project 3">
+                <h3 class="text-primary">Project 3</h3>
+                <p class="text-success">Description of project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5 mb-5" >
+        <h2 class="text-danger">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name" class="text-warning">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-warning" >Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message" class="text-warning">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
